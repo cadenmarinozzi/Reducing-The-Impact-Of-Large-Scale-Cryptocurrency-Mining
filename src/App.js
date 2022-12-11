@@ -7,6 +7,7 @@ import ReferencesPage from 'Components/pages/ReferencesPage';
 import HabitatPage from 'Components/pages/HabitatPage';
 import WhyIsItBadGraph from 'Components/pages/WhyIsItBadGraph';
 import './App.scss';
+import CarbonCyclePage from 'Components/pages/CarbonCyclePage';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<WhyIsItBadPage />
 			<WhyIsItBadGraph />
 			<HabitatPage />
+			<CarbonCyclePage />
 			<WhatSolutionPage />
 			<SolutionEffectPage />
 			<ReferencesPage />
