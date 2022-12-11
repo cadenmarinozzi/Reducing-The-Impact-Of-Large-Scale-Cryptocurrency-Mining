@@ -19,6 +19,13 @@
         max-height: 500px;
     }
 
+    @media (max-width: 2000px) {
+        .graph {
+            max-width: 700px;
+            max-height: 300px;
+        }
+    }
+
     .description {
         max-width: 750px;
     }

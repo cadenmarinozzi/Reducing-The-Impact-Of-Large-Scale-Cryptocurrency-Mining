@@ -44,7 +44,8 @@ class CarbonCyclePage extends Component {
 					gradients={gradients}
 					property="text"
 					duration={3000}
-					angle="45deg">
+					angle="45deg"
+					className="carbon-cycle-gradient">
 					<h1 className="title">
 						How Does Carbon Move To And From Crypto Mining
 						Facilities?
@@ -124,54 +125,51 @@ class CarbonCyclePage extends Component {
 					</div>
 				</Gradient>
 				<Xarrow
-					start={firstPowerRef} //can be react ref
-					end={powerPlantRef} //or an id
+					start={firstPowerRef}
+					end={powerPlantRef}
 					color="#ABA7B3"
 				/>
 				<Xarrow
-					start={solarPowerRef} //can be react ref
-					end={solarPanelsRef} //or an id
+					start={solarPowerRef}
+					end={solarPanelsRef}
 					color="#FBD700"
 				/>
 				<Xarrow
-					start={solarPanelsRef} //can be react ref
-					end={cryptoMiningRef} //or an id
+					start={solarPanelsRef}
+					end={cryptoMiningRef}
 					color="#FBD700"
 				/>
 				<Xarrow
-					start={powerPlantRef} //can be react ref
-					end={cryptoMiningRef} //or an id
+					start={powerPlantRef}
+					end={cryptoMiningRef}
 					color="#ABA7B3"
 				/>
 				<Xarrow
-					start={solarPanelsRef} //can be react ref
-					end={miningFacilityCoolingRef} //or an id
+					start={solarPanelsRef}
+					end={miningFacilityCoolingRef}
 					color="#FBD700"
 				/>
 				<Xarrow
-					start={powerPlantRef} //can be react ref
-					end={miningFacilityCoolingRef} //or an id
+					start={powerPlantRef}
+					end={miningFacilityCoolingRef}
 					color="#ABA7B3"
 				/>
 				<Xarrow
-					start={powerPlantRef} //can be react ref
-					end={fossilFuelEmissionsRef} //or an id
+					start={powerPlantRef}
+					end={fossilFuelEmissionsRef}
 					color="#ABA7B3"
 				/>
 				<Xarrow
-					start={fossilFuelEmissionsRef} //can be react ref
-					end={atmosphereRef} //or an id
+					start={fossilFuelEmissionsRef}
+					end={atmosphereRef}
 					startAnchor="bottom"
 					color="#ABA7B3"
 				/>
+				<Xarrow start={miningFacilityCoolingRef} end={waterBodiesRef} />
 				<Xarrow
-					start={miningFacilityCoolingRef} //can be react ref
-					end={waterBodiesRef} //or an id
-				/>
-				<Xarrow
-					start={waterBodiesRef} //can be react ref
+					start={waterBodiesRef}
 					startAnchor="bottom"
-					end={endWaterRef} //or an id
+					end={endWaterRef}
 				/>
 			</div>
 		);
