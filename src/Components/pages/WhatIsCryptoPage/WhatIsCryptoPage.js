@@ -6,9 +6,9 @@ const gradients = [
 	['#ff2121', '#25c668'],
 ];
 
-function WhatIsCryptoPage() {
+function WhatIsCryptoPage({ scrollRef }) {
 	return (
-		<div className="what-is-crypto-page">
+		<div className="what-is-crypto-page" ref={scrollRef}>
 			<Gradient
 				gradients={gradients}
 				property="text"
