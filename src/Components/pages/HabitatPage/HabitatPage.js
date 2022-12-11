@@ -30,7 +30,8 @@ function HabitatPage() {
 				<span className="emphasis">
 					dumping their waste into rivers and lakes
 				</span>
-				.
+				. The waste that is dumped is toxic and can kill fish and
+				pollute drinking water.
 			</span>
 			<span className="description">
 				Here are some examples of crypto mining facilities destroying

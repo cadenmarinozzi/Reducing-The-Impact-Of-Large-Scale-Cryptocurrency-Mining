@@ -41,7 +41,12 @@ function SolutionEffectPage() {
 				used to mine cryptocurrencies, which will reduce the carbon
 				footprint of crypto mining. Less computers and less heat means
 				less toxic chemicals will be released into the environment, as
-				the computers will not need to be cooled as much.
+				the computers will not need to be cooled as much. This will
+				improve the resilience of the environment as marine life will
+				not be harmed by the toxic chemicals, improving biodiversity.
+				This solution will also improve the quality of the water for
+				locals to the facilities, allowing them to use the water for
+				drinking and other purposes.
 			</span>
 		</div>
 	);
