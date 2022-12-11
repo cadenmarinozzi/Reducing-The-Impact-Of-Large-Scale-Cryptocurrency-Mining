@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/static/css/main.bbbb927b.css",
+    "main.js": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/static/js/main.c261ef20.js",
+    "static/media/crypto.png": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/static/media/crypto.fb5a55926820a17d0e84.png",
+    "static/media/Mona-Sans.woff2": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/static/media/Mona-Sans.955a87eb3766a32ac970.woff2",
+    "index.html": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/index.html",
+    "main.bbbb927b.css.map": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/static/css/main.bbbb927b.css.map",
+    "main.c261ef20.js.map": "/Reducing-The-Impact-Of-Large-Scale-Cryptocurrency-Mining/static/js/main.c261ef20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbbb927b.css",
+    "static/js/main.c261ef20.js"
+  ]
+}
