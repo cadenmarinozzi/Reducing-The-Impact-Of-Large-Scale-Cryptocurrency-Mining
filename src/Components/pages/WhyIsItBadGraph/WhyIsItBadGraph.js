@@ -24,43 +24,43 @@ ChartJS.register(
 
 const dateRegex = /\d\d\d\d-\d\d-\d\d/g;
 const cryptoData = JSON.parse(cryptoJson);
+const evalData = cryptoData.slice(1).filter((_, index) => index % 50 === 0);
+
 const data = {
-	labels: cryptoData
-		.slice(1)
-		.map(
-			(data) =>
-				data['Average electricity cost assumption: 0.05 USD/kWh'].match(
-					dateRegex
-				)[0]
-		),
+	labels: evalData.map(
+		(data) =>
+			data['Average electricity cost assumption: 0.05 USD/kWh'].match(
+				dateRegex
+			)[0]
+	),
 	datasets: [
 		{
 			label: 'Hydro Only',
-			data: cryptoData.slice(1).map((data) => {
+			data: evalData.map((data) => {
 				return Object.values(data)[1];
 			}),
 			backgroundColor: 'rgb(54, 162, 235)',
-			borderColor: 'rgba(54, 162, 235, 0.2)',
-			pointBackgroundColor: 'rgba(54, 162, 235, 0.2)',
+			borderColor: 'rgba(54, 162, 235, 1)',
+			pointBackgroundColor: 'rgba(54, 162, 235, 1)',
 		},
 		{
 			label: 'Estimated',
-			data: cryptoData.slice(1).map((data) => {
+			data: evalData.map((data) => {
 				return Object.values(data)[2];
 			}),
 			backgroundColor: 'rgb(150, 150, 155)',
-			borderColor: 'rgba(150, 150, 155, 0.2)',
-			pointBackgroundColor: 'rgba(155, 155, 150, 0.2)',
+			borderColor: 'rgba(150, 150, 155, 1)',
+			pointBackgroundColor: 'rgba(155, 155, 150, 1)',
 		},
 		{
 			label: 'Coal Only',
-			data: cryptoData.slice(1).map((data) => {
+			data: evalData.map((data) => {
 				return Object.values(data)[3];
 			}),
 
 			backgroundColor: 'rgb(255, 99, 132)',
-			borderColor: 'rgba(255, 99, 132, 0.2)',
-			pointBackgroundColor: 'rgba(255, 99, 132, 0.2)',
+			borderColor: 'rgba(255, 99, 132, 1)',
+			pointBackgroundColor: 'rgba(255, 99, 132, 1)',
 		},
 	],
 };

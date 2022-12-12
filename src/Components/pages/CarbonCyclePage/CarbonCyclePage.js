@@ -16,8 +16,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Gradient } from 'react-gradient';
 import Xarrow from 'react-xarrows';
-import './CarbonCyclePage.scss';
 import { Component, createRef } from 'react';
+import './CarbonCyclePage.scss';
 
 const gradients = [
 	['#bd19d6', '#ea7d10'],

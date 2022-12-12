@@ -7,13 +7,11 @@ import ReferencesPage from 'Components/pages/ReferencesPage';
 import HabitatPage from 'Components/pages/HabitatPage';
 import WhyIsItBadGraph from 'Components/pages/WhyIsItBadGraph';
 import CarbonCyclePage from 'Components/pages/CarbonCyclePage';
-import { Component, createRef } from 'react';
-import './App.scss';
 import RestraintsPage from 'Components/pages/RestraintsPage';
-
-function scrollToComponent(ref) {
-	window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
-}
+import { Component, createRef } from 'react';
+import SolutionCarbonCyclePage from 'Components/pages/SolutionCarbonCyclePage';
+import { scrollToComponent } from './modules/utils';
+import './App.scss';
 
 class App extends Component {
 	constructor() {
@@ -33,6 +31,7 @@ class App extends Component {
 				<HabitatPage />
 				<CarbonCyclePage />
 				<WhatSolutionPage />
+				<SolutionCarbonCyclePage />
 				<SolutionEffectPage />
 				<RestraintsPage />
 				<ReferencesPage />
